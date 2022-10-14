@@ -1,77 +1,97 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: black;
     color: white;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
-    
 }
-#navbar{
+#navbar {
     display: flex;
     justify-content: space-between;
     position: fixed;
     overflow: hidden;
     width: 100%;
-    max-height: 100px;
+    max-height: 70px;
     z-index: 9999;
     background-color: rgb(104, 64, 163);
     padding: 2%;
 }
 
-#navbar>#title{
-    font-size: 4vw;
+#navbar > #title {
+    font-size: 1.5vw;
     cursor: pointer;
-    align-self: center;
+    align-self:center;
     padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
 }
-#navbar>#links{
+
+#main_title{
+    font-size: 3vw;
+}
+
+.sub_title{
+    align-self:center;
+}
+
+#navbar > #links {
     width: 30%;
     display: flex;
     justify-content: space-evenly;
     align-self: center;
 }
-#links .link_social{
+#links .link_social {
     width: auto;
     font-size: 1.5vw;
 }
 
-#about{
+#about {
     padding: 100px 10px;
     z-index: 0;
+}
+
+img {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 20%;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Khula:700);
 
 .hidden {
-  opacity:0;
+    opacity: 0;
 }
 .console-container {
- 
-  font-family:Khula;
-  font-size:6em;
-  text-align:center;
-  height:200px;
-  width:700px;
-  display:block;
-  position:absolute;
-  color:white;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  margin:auto;
+    font-family: Khula;
+    font-size: 6vw;
+    text-align: center;
+    height: 100px;
+    width: 50vw;
+    display: block;
+    position: absolute;
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 40%;
+    right: 0;
+    margin: auto;
 }
 .console-underscore {
-   display:inline-block;
-  position:relative;
-  top:-0.14em;
-  left:10px;
+    display: inline-block;
+    position: relative;
+    top: -0.14em;
+    left: 10px;
 }
