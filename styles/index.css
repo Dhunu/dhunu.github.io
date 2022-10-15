@@ -15,6 +15,9 @@ a {
 }
 #navbar {
     display: flex;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     justify-content: space-between;
     position: fixed;
     overflow: hidden;
@@ -28,19 +31,19 @@ a {
 #navbar > #title {
     font-size: 1.5vw;
     cursor: pointer;
-    align-self:center;
+    align-self: center;
     padding-left: 50px;
     display: flex;
     justify-content: space-between;
     width: 25%;
 }
 
-#main_title{
+.main_title {
     font-size: 3vw;
 }
 
-.sub_title{
-    align-self:center;
+.sub_title {
+    align-self: center;
 }
 
 #navbar > #links {
@@ -59,7 +62,7 @@ a {
     z-index: 0;
 }
 
-img {
+#about img {
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
@@ -94,4 +97,55 @@ img {
     position: relative;
     top: -0.14em;
     left: 10px;
+}
+
+#projects {
+    margin-top: 60vh;
+    padding-top: 20vh;
+}
+
+#projects > .main_title {
+    padding: 0 5%;
+    background-color: rgb(104, 64, 163);
+}
+
+#project_container {
+    padding: 5%;
+}
+
+.project {
+    display: flex;
+    margin: 5% 0;
+}
+
+.project-text {
+    width: 50%;
+    padding: 0 5%;
+}
+
+.project-title {
+    margin: 5% 0;
+}
+
+.project-description {
+    margin: 2% 0;
+    padding: 1% 2% 1% 0;
+}
+
+.project-elements {
+    display: flex;
+    margin: 2% 0;
+}
+
+.project-sub-title {
+    width: 30%;
+}
+
+.project-image {
+    width: 50%;
+    padding: 0 1%;
+}
+
+.project-image img {
+    width: 100%;
 }
