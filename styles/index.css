@@ -35,7 +35,7 @@ a {
     padding-left: 50px;
     display: flex;
     justify-content: space-between;
-    width: 25%;
+    width: 50%;
 }
 
 .main_title {
@@ -44,6 +44,7 @@ a {
 
 .sub_title {
     align-self: center;
+    font-size: 70%;
 }
 
 #navbar > #links {
@@ -104,7 +105,7 @@ a {
     padding-top: 20vh;
 }
 
-#projects > .main_title {
+.main_title {
     padding: 0 5%;
     background-color: rgb(104, 64, 163);
 }
@@ -148,4 +149,34 @@ a {
 
 .project-image img {
     width: 100%;
+}
+
+
+/* media queries */
+
+@media screen and (max-width:1200px){
+    
+    #navbar > #title {
+        padding-left: 30px;
+        width: 55%;
+    }
+    .console-container {
+        height: 200px;
+    }
+
+    #projects {
+        margin-top: 30vh;
+    }
+
+    .project {
+        flex-wrap:wrap-reverse;
+    }
+
+    .project-text {
+        width: 100%;
+    }
+
+    .project-image{
+        width: 100%;
+    }
 }
