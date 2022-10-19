@@ -188,6 +188,7 @@ a {
     padding: 5%;
     justify-content: space-around;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 #skill-container img{
@@ -195,8 +196,13 @@ a {
     width: 64px;
 }
 
+.skill{
+    width: 15%;
+    margin: 1%;
+}
+
 .skill>div{
-    margin: 10% 0;
+    margin: 10%;
 }
 
 
