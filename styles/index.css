@@ -265,6 +265,11 @@ a {
     margin: 10%;
 }
 
+#calender{
+    background-color: rgb(183, 141, 246);
+    color: black;
+}
+
 
 
 /* media queries */
