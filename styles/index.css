@@ -133,6 +133,11 @@ a {
     padding-top: 20vh;
 }
 
+#about-me-description{
+    padding: 2% 5%;
+    font-size: 30px;
+}
+
 .main_title {
     padding: 0 5%;
     background-color: rgb(104, 64, 163);
@@ -181,6 +186,30 @@ a {
 
 .project-image img {
     width: 100%;
+}
+
+#education-container{
+    padding: 2% 5%;
+}
+
+.education-institutes{
+    margin: 2% 0;
+}
+
+.degree{
+    font-size: 25px;
+    font-style: italic;
+    margin: 1% 0;
+}
+
+.institute-name{
+    font-size: 20px;
+    margin: 1% 0;
+}
+
+.date{
+    font-size: 15px;
+    margin: 1% 0;
 }
 
 #skill-container{
