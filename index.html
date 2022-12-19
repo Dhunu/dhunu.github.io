@@ -19,9 +19,9 @@
 
         <div id="title">
             <div class="main_title"><a href="index.html">Home</a></div>
-            <div class="sub_title"><a href="#about-me">About Me</a></div>
+            <div class="sub_title"><a href="#gap_about_me">About Me</a></div>
             <div class="sub_title"><a href="#skills">Skills</a></div>
-            <div class="sub_title"><a href="#projects">Projects</a></div>
+            <div class="sub_title"><a href="#gap_project">Projects</a></div>
             <div class="sub_title"><a href="#contacts">Contacts</a></div>
             <div class="sub_title"><a
                     href="https://drive.google.com/file/d/1Kbl2jUxslOCnmP6GQESF0YOR47FlVROp/view?usp=sharing"
@@ -51,15 +51,18 @@
 
     <!--About Section-->
     <div id="about">
-        <img src="./resources/pic.jpeg" alt="" />
+        <img src="./resources/pic.png" alt="" />
         <div class="console-container">
             <span id="text"></span>
             <div class="console-underscore" id="console">&#95;</div>
         </div>
     </div>
 
+    <div id="gap_about_me">
+    </div>
+
     <!--About me-->
-    <div id="about-me">
+    <div id="about-me" class="section">
         <div class="main_title">About Me</div>
         <p id="about-me-description">
             Hi! I am Angel, an aspiring Java backend Developer, very interested in learning and developing new features
@@ -69,11 +72,14 @@
         </p>
     </div>
 
+    <div class="gap" id="gap_project">
+    </div>
+
     <!--Projects-->
-    <div id="projects">
+    <div id="projects" class="section">
         <div class="main_title">Projects</div>
         <div id="project_container">
-            <div class="project">
+            <div class="project-card">
                 <div class="project-text">
                     <h1 class="project-title">
                         Brightline - Clone(Group Project)</a>
@@ -132,8 +138,7 @@
 
                 </div>
             </div>
-            <hr>
-            <div class="project">
+            <div class="project-card">
                 <div class="project-text">
                     <h1 class="project-title">
                         <a href="https://peppy-valkyrie-ddd5ab.netlify.app/index.html">
@@ -199,8 +204,11 @@
         </div>
     </div>
 
+    <div class="gap" id="gap_skill">
+    </div>
+
     <!--Skills-->
-    <div id="skills">
+    <div id="skills" class="section">
         <div class="main_title">Skills</div>
         <div id="skill-container">
             <div class="skill">
@@ -250,42 +258,49 @@
         </div>
     </div>
 
-     <!--Github Calender-->
-     <div id="github">
+    <div class="gap" id="gap_calender">
+    </div>
+
+    <!--Github Calender-->
+    <div id="github" class="section">
         <div class="main_title">Github Calender</div>
         <div id="calender">
             <!-- Include the library. -->
-        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-        </script>
+            <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+            </script>
 
-        <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-        <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+            <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+            <link rel="stylesheet"
+                href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 
-        <!-- Prepare a container for your calendar. -->
-        <div class="calendar">
-            <!-- Loading stuff -->
-            Loading the data just for you.
+            <!-- Prepare a container for your calendar. -->
+            <div class="calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+            </div>
+
+            <script>
+                GitHubCalendar(".calendar", "dhunu");
+
+                // or enable responsive functionality:
+                GitHubCalendar(".calendar", "dhunu", { responsive: true });
+
+                // Use a proxy
+                GitHubCalendar(".calendar", "dhunu", {
+                    proxy(dhunu) {
+                        return fetch(`https://your-proxy.com/github?user=${dhunu}`)
+                    }
+                }).then(r => r.text())
+            </script>
         </div>
 
-        <script>
-            GitHubCalendar(".calendar", "dhunu");
+    </div>
 
-            // or enable responsive functionality:
-            GitHubCalendar(".calendar", "dhunu", { responsive: true });
-
-            // Use a proxy
-            GitHubCalendar(".calendar", "dhunu", {
-                proxy(dhunu) {
-                    return fetch(`https://your-proxy.com/github?user=${dhunu}`)
-                }
-            }).then(r => r.text())
-        </script>
-        </div>
-        
+    <div class="gap" id="gap_education">
     </div>
 
     <!--Education-->
-    <div id="education">
+    <div id="education" class="section">
         <div class="main_title">Education</div>
         <div id="education-container">
             <div class="education-institutes">
@@ -355,11 +370,14 @@
         </div>
     </div>
 
-    <div id="contacts">
+    <div class="gap" id="gap_contact">
+    </div>
+
+    <div id="contacts" class="section">
         <div class="main_title">Contacts Me</div>
     </div>
 
-   
+
 </body>
 
 </html>
