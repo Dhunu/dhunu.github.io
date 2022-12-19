@@ -22,9 +22,9 @@
         <div id="title">
             <div class="main_title" style="font-size: 30px"><a href=" index.html">Home</a></div>
             <div class="sub_title"><a href="#gap_about_me">About Me</a></div>
-            <div class="sub_title"><a href="#skills">Skills</a></div>
+            <div class="sub_title"><a href="#gap_skill">Skills</a></div>
             <div class="sub_title"><a href="#gap_project">Projects</a></div>
-            <div class="sub_title"><a href="#contacts">Contacts</a></div>
+            <div class="sub_title"><a href="#gap_contact">Contacts</a></div>
             <div class="sub_title"><a
                     href="https://drive.google.com/file/d/1Kbl2jUxslOCnmP6GQESF0YOR47FlVROp/view?usp=sharing"
                     target="_blank">Resume</a></div>
@@ -50,6 +50,21 @@
             </div>
         </div>
     </nav>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <div class="main_title" style="font-size: 30px"><a href=" index.html" onclick="closeNav()">Home</a></div>
+            <div class="sub_title"><a href="#gap_about_me" onclick="closeNav()">About Me</a></div>
+            <div class="sub_title"><a href="#gap_skill" onclick="closeNav()">Skills</a></div>
+            <div class="sub_title"><a href="#gap_project" onclick="closeNav()">Projects</a></div>
+            <div class="sub_title"><a href="#gap_contact" onclick="closeNav()">Contacts</a></div>
+            <div class="sub_title"><a
+                    href="https://drive.google.com/file/d/1Kbl2jUxslOCnmP6GQESF0YOR47FlVROp/view?usp=sharing"
+                    target="_blank" onclick="closeNav()">Resume</a></div>
+            <div class="sub_title"><a href="#education" onclick="closeNav()">Education</a></div>
+        </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Angel</span>
 
     <!--About Section-->
     <div id="about">
@@ -70,8 +85,15 @@
             Hi! I am Angel, an aspiring Java backend Developer, very interested in learning and developing new features
             and technologies.
             I am very adapt to any working condition, remote or on-site.
+            <br />
+            <button id="resume_download">
+                <a href="./resources/Angel_Saikia_Resume.pdf" download>
+                    Resume <i class="fa fa-download"></i>
+                </a>
+            </button>
 
         </p>
+
     </div>
 
     <div class="gap" id="gap_project">
@@ -272,6 +294,22 @@
         </div>
     </div>
 
+    <div class="gap" id="gap_stats">
+    </div>
+
+    <!--Github Stats-->
+
+    <div class="stats" style="width: auto; margin: 20px; align-items: center;">
+        <div class="main_title">Github Calender</div>
+
+        <img src="https://github-readme-stats.vercel.app/api?username=dhunu&theme=dark&hide_border=false&include_all_commits=true&count_private=false"
+            alt="">
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=dhunu&theme=dark&hide_border=false" alt="">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dhunu&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact"
+            alt="">
+        <!-- </div> -->
+    </div>
+
     <div class="gap" id="gap_education">
     </div>
 
@@ -349,6 +387,8 @@
     <div class="gap" id="gap_contact">
     </div>
 
+    <!--Contact Me-->
+
     <div id="contacts" class="section">
         <div class="main_title">Contacts Me</div>
     </div>
@@ -369,4 +409,13 @@
 
 <script>
     new GitHubCalendar(".calendar", "dhunu");
+</script>
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
 </script>
