@@ -21,7 +21,7 @@ a {
   color: white;
   text-decoration: none;
 }
-#navbar {
+#nav-menu {
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -37,7 +37,7 @@ a {
   padding: 2%;
 }
 
-#navbar > #title {
+#nav-menu > #title {
   font-size: 1.5vw;
   cursor: pointer;
   align-self: center;
@@ -79,7 +79,7 @@ a {
   font-size: 70%;
 }
 
-#navbar > #links {
+#nav-menu > #links {
   width: 30%;
   display: flex;
   justify-content: space-evenly;
@@ -107,13 +107,13 @@ a {
   z-index: 0;
 }
 
-#about {
+#home {
   height: 50vh;
   padding: 5vw 10px;
   z-index: 0;
 }
 
-#about img {
+#home img {
   background-color: #ca9a82;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   width: 20vw;
@@ -180,7 +180,7 @@ a {
   left: 10px;
 }
 
-#about-me {
+#about {
   background-color: #ac8470;
 }
 
@@ -561,7 +561,7 @@ textarea {
   span {
     color: #783310;
   }
-  #navbar {
+  #nav-menu {
     display: none;
   }
   .overlay a {
@@ -596,7 +596,7 @@ textarea {
 }
 
 @media screen and (max-width: 1200px) {
-  #navbar > #title {
+  #nav-menu > #title {
     padding-left: 30px;
     width: 55%;
   }
