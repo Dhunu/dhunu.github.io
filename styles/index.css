@@ -77,6 +77,12 @@ a {
 .sub_title {
   align-self: center;
   font-size: 70%;
+  transition: 0.25s ease-in;
+}
+
+.sub_title:hover{
+  font-size: 80%;
+  transition: 0.25s ease-out;
 }
 
 #nav-menu > #links {
