@@ -517,18 +517,24 @@ textarea {
 }
 
 .sub-heading-contact {
-  font-size: 20px;
-  letter-spacing: 5px;
+  font-size: 15px;
+  letter-spacing: 1px;
   margin: 20px;
+  width: 80%;
 }
 
 .sub-heading-contact > #links {
   margin: 5% 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .sub-heading-contact .link_social {
   margin: 5% 0;
   display: flex;
+  justify-content: space-between;
 }
 
 .sub-heading-contact .link_social p {
@@ -542,6 +548,19 @@ textarea {
 #contact-intro {
   padding-top: 2%;
   font-size: 20px;
+}
+
+.link-contact{
+  width: 5vw;
+}
+
+.link-contact-name{
+  width: 10vw;
+}
+
+.link_social div{
+  display: flex;
+  align-items: center;
 }
 
 /* Footter */
@@ -585,9 +604,11 @@ textarea {
 
   #contact-form {
     padding: 20px;
+    width: 100%;
   }
 
   #contact-details {
+    width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -599,6 +620,29 @@ textarea {
   .project-card {
     padding: 10px;
   }
+
+  .sub-heading-contact{
+    width: 90%;
+  }
+
+  .sub-heading-contact #links{
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .sub-heading-contact .link_social{
+    width: 25%;
+  }
+
+  .link-contact{
+    margin-right: 10px;
+  }
+
+  .link-contact-name{
+    width: 70%;
+  }
+  
 }
 
 @media screen and (max-width: 1200px) {
@@ -624,5 +668,26 @@ textarea {
 
   .stats img {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #contact-details{
+    min-width: 0;
+  }
+
+  .sub-heading-contact .link_social{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .link-contact{
+    display: flex;
+    justify-content: center;
+  }
+
+  .link-contact-name{
+    display: flex;
+    justify-content: center;
   }
 }
