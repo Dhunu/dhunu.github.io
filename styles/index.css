@@ -134,6 +134,10 @@ a {
   animation-fill-mode: forwards;
 }
 
+#home-small{
+  display: none;
+}
+
 @keyframes fadeInAnimationleft {
   0% {
     opacity: 0;
@@ -232,6 +236,7 @@ a {
 }
 
 .project-title {
+  color:#783310;
   margin: 5% 0;
 }
 
@@ -247,6 +252,7 @@ a {
 }
 
 .project-sub-title {
+  color:#783310;
   width: 30%;
   min-width: 150px;
 }
@@ -583,6 +589,135 @@ textarea {
 /* media queries */
 
 @media screen and (max-width: 800px) {
+  #home{
+    display: none;
+  }
+
+  #home-small{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #home-small img{
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  }
+
+  #intro{
+    width: 55%;
+    padding-top: 50px;
+  }
+
+  #footter{
+    font-size: 8px;
+    height: auto;
+  }
+
+  #contact-form > button {
+    width: 2vw;
+    min-width: 80px;
+    height: 2vw;
+    min-height: 30px;
+    font-size: 15px;
+  }
+
+  .contact-box h3{
+    font-size: 10px;
+  }
+
+  #contact-intro{
+    font-size: 10px;
+  }
+
+  .degree{
+    font-size: 15px;
+    color: #783310;
+  }
+
+  .institute-name{
+    font-size: 10px;
+  }
+
+  .date{
+    font-size: 10px;
+  }
+
+  #skill-container img {
+    height: 32px;
+    width: 32px;
+  }
+
+  .skill {
+    width: 15%;
+    min-width: 50px;
+    margin: 1%;
+    padding: 1%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #ddb19c;
+    border-radius: 10%;
+  }
+
+  .skill div{
+    font-size: 5px;
+  }
+
+  .project-links {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .live-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 20px;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    margin: 2% 0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: #783310 solid 1px;
+    transition: ease-out 0.5s;
+    color: #783310;
+    font-size: 10px;
+  }
+
+  .project-title {
+    font-size: 25px;
+    font-family: Khula, cursive;
+    font-weight: 100;
+  }
+
+  .project-description{
+    font-size: 15px;
+  }
+
+  .project-sub-title{
+    font-size: 15px;
+  }
+
+  .project-sub-description{
+    font-size: 10px;
+  }
+
+  #resume_download {
+    font-size: 15px;
+    width: 7vw;
+    min-width: 100px;
+    height: 2vw;
+  }
+
   span {
     color: #783310;
   }
@@ -599,7 +734,12 @@ textarea {
   }
 
   .main_title {
+    font-size: 30px;
     padding-top: 60px;
+  }
+
+  #about-me-description {
+    font-size: 15px;
   }
 
   #contact-form {
