@@ -8,6 +8,17 @@
   font-family: "Roboto Slab", serif;
 }
 
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -72,6 +83,7 @@ a {
   font-size: 50px;
   color: #783310;
   font-family: "Luckiest Guy", cursive;
+  text-align: center;
 }
 
 .sub_title {
@@ -196,7 +208,7 @@ a {
 
 #about-me-description {
   padding: 2% 0;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 #resume_download {
@@ -335,7 +347,7 @@ a {
 #skill-container {
   display: flex;
   padding: 5% 0;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: center;
   flex-wrap: wrap;
   background-color: #ca9a82;
@@ -344,8 +356,8 @@ a {
 }
 
 #skill-container img {
-  height: 64px;
-  width: 64px;
+  height: 84px;
+  width: 84px;
 }
 
 .skill {
@@ -353,13 +365,11 @@ a {
   min-width: 150px;
   margin: 1%;
   padding: 1%;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background-color: #ddb19c;
-  border-radius: 10%;
 }
 
 .skill > div {
   margin: 10%;
+  color: #783310;
 }
 
 #github {
@@ -653,12 +663,10 @@ textarea {
   }
 
   .skill {
-    width: 15%;
+    width: 25%;
     min-width: 50px;
     margin: 1%;
     padding: 1%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: #ddb19c;
     border-radius: 10%;
   }
 
