@@ -1,8 +1,8 @@
 // function([string1, string2],target id,[color1,color2])
 consoleText(["Hi!", "I am Angel", "A Java Backend Developer"], "text", [
-  "#783310",
+  "#3D2B1F",
   "rgb(255, 255, 255)",
-  "#783310",
+  "#3D2B1F",
 ]);
 
 function consoleText(words, id, colors) {
@@ -57,7 +57,7 @@ function reveal() {
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+    var elementVisible = 100;
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
     } else {
@@ -65,21 +65,5 @@ function reveal() {
     }
   }
 }
-
-function reveal_left() {
-  var reveals = document.querySelectorAll(".reveal_left");
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
-}
-
-window.addEventListener("scroll",reveal_left)
 
 window.addEventListener("scroll", reveal);

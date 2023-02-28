@@ -32,7 +32,7 @@
 
 .reveal{
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(100px);
   opacity: 0;
   transition: 2s all ease;
 }
@@ -54,7 +54,7 @@ html {
 }
 
 body {
-  background-color: #ac8470;
+  background-color: #9F8170;
   color: white;
 }
 
@@ -74,7 +74,7 @@ a {
   height: 5vw;
   min-height: 60px;
   z-index: 9999;
-  background-color: #965d4f;
+  background-color: #3D2B1F;
   padding: 2%;
 }
 
@@ -106,12 +106,12 @@ a {
 }
 
 .section {
-  padding: 3% 5%;
+  padding: 3% 5% 0 3%;
 }
 
 .main_title {
   font-size: 50px;
-  color: #783310;
+  color: #3D2B1F;
   font-family: "Luckiest Guy", cursive;
   text-align: center;
 }
@@ -122,8 +122,23 @@ a {
   transition: 0.25s ease-in;
 }
 
+.sub_title .af{
+  display: none;
+}
+
 .sub_title:hover{
   font-size: 80%;
+  transition: 0.25s ease-out;
+  
+}
+
+.sub_title:hover .be{
+  display: none;
+  transition: 0.25s ease-out;
+}
+
+.sub_title:hover .af{
+  display: block;
   transition: 0.25s ease-out;
 }
 
@@ -141,17 +156,18 @@ a {
 #gap_about_me {
   margin-top: 32vw;
   width: 100%;
-  height: 5vw;
+  height: 7vw;
   background-color: #ca9a82;
-  background-image: linear-gradient(#ac8470, #965d4f);
+  background-image: linear-gradient(#9F8170, #ca9a82);
   z-index: 0;
 }
 
 .gap {
   width: 100%;
-  height: 5vw;
-  background-color: #ca9a82;
-  background-image: linear-gradient(#ac8470, #965d4f);
+  height: 7vw;
+  background-color: #ffc5a7;
+  background-image: linear-gradient(#9F8170, #ca9a82);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
   z-index: 0;
 }
 
@@ -162,7 +178,7 @@ a {
 }
 
 #home img {
-  background-color: #ca9a82;
+  background-color: #3D2B1F;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   width: 20vw;
   height: 20vw;
@@ -232,9 +248,9 @@ a {
   left: 10px;
 }
 
-#about {
-  background-color: #ac8470;
-}
+/* #about {
+  background-color: #f5e1d794;
+} */
 
 #about-me-description {
   padding: 2% 0;
@@ -247,17 +263,17 @@ a {
   height: 3vw;
   min-height: 50px;
   margin-top: 50px;
-  background-color: #ac8470;
+  background-color: transparent;
   border-radius: 10px;
-  border: #783310 solid 1px;
+  border: #3D2B1F solid 1px;
   font-weight: 600;
   font-size: 20px;
   transition: ease-out 0.5s;
-  color: #783310;
+  color: #3D2B1F;
 }
 
 #resume_download:hover {
-  background-color: #783310;
+  background-color: #3D2B1F;
   transition: ease-in 0.5s;
   color: #ddb19c;
   cursor: pointer;
@@ -268,7 +284,7 @@ a {
   margin: 5% 0;
   padding: 50px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background-color: #ca9a82;
+  background-color: #3D2B1F;
   border-radius: 20px;
 }
 
@@ -278,7 +294,7 @@ a {
 }
 
 .project-title {
-  color:#783310;
+  color: #D7C275;
   margin: 5% 0;
 }
 
@@ -291,12 +307,18 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 2% 0;
+  align-items: center;
 }
 
 .project-sub-title {
-  color:#783310;
+  color:#FAF4D4;
   width: 30%;
   min-width: 150px;
+  margin: 0;
+}
+
+.project-sub-description{
+  margin-left: 20px;
 }
 
 .project-image {
@@ -330,14 +352,14 @@ a {
   border-radius: 25px;
   cursor: pointer;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border: #783310 solid 1px;
+  border: #FAF4D4 solid 1px;
   transition: ease-out 0.5s;
-  color: #783310;
+  color: #FAF4D4;
   font-size: 20px;
 }
 
 .live-link:hover {
-  background-color: #783310;
+  background-color: #3D2B1F;
   color: #ddb19c;
   transition: 0.2s ease-in;
 }
@@ -358,7 +380,7 @@ a {
   font-size: 25px;
   font-style: italic;
   margin: 1% 0;
-  color: #783310;
+  color: #3D2B1F;
 }
 
 .institute-name {
@@ -381,14 +403,14 @@ a {
   justify-content: space-evenly;
   text-align: center;
   flex-wrap: wrap;
-  background-color: #ca9a82;
+  background-color: #3D2B1F;
   margin-top: 2%;
   border-radius: 20px;
 }
 
 #skill-container img {
-  height: 84px;
-  width: 84px;
+  height: 100px;
+  width: 100px;
 }
 
 .skill {
@@ -400,7 +422,7 @@ a {
 
 .skill > div {
   margin: 10%;
-  color: #783310;
+  color: #D7C275;
 }
 
 #github {
@@ -412,8 +434,8 @@ a {
 }
 
 #cal {
-  background-color: #ca9a82;
-  color: black;
+  background-color: transparent;
+  color: #3D2B1F;
   width: auto;
   margin-top: 2%;
   min-width: 720px;
@@ -497,7 +519,7 @@ a {
   margin: 5% auto;
   padding: 50px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background-color: #ca9a82;
+  background-color: #3D2B1F;
   border-radius: 20px;
 }
 
@@ -513,7 +535,7 @@ textarea {
 textarea {
   background-color: #ddb19c;
   border-radius: 5px;
-  color: white;
+  color: #ca9a82;
 }
 
 #contact-form > button {
@@ -524,17 +546,17 @@ textarea {
   margin-top: 50px;
   background-color: transparent;
   border-radius: 10px;
-  border: #783310 solid 1px;
+  border: #fff solid 1px;
   font-weight: 600;
   font-size: 25px;
-  color: #783310;
+  color: #fff;
   letter-spacing: 3px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: ease-out 0.5s;
 }
 
 #contact-form > button:hover {
-  background-color: #783310;
+  background-color: #3D2B1F;
   transition: ease-in 0.5s;
   color: #ddb19c;
   cursor: pointer;
@@ -543,7 +565,7 @@ textarea {
 #contact-form input,
 textarea {
   min-height: 30px;
-  border: #783310 solid 1px;
+  border: #3D2B1F solid 1px;
   padding: 5px;
 }
 
@@ -677,7 +699,7 @@ textarea {
 
   .degree{
     font-size: 15px;
-    color: #783310;
+    color: #3D2B1F;
   }
 
   .institute-name{
@@ -694,7 +716,7 @@ textarea {
   }
 
   .skill {
-    width: 25%;
+    width: 35%;
     min-width: 50px;
     margin: 1%;
     padding: 1%;
@@ -702,7 +724,7 @@ textarea {
   }
 
   .skill div{
-    font-size: 5px;
+    font-size: 12px;
   }
 
   .project-links {
@@ -726,11 +748,13 @@ textarea {
     border-radius: 25px;
     cursor: pointer;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border: #783310 solid 1px;
+    border: #3D2B1F solid 1px;
     transition: ease-out 0.5s;
-    color: #783310;
+    color: #3D2B1F;
     font-size: 10px;
   }
+
+  
 
   .project-title {
     font-size: 25px;
@@ -758,7 +782,7 @@ textarea {
   }
 
   span {
-    color: #783310;
+    color: #3D2B1F;
   }
   #nav-menu {
     display: none;
