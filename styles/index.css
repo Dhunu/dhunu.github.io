@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
 
 @keyframes fade-left {
   0% {
@@ -54,7 +55,7 @@ html {
 }
 
 body {
-  background-color: #9F8170;
+  background-color: #A67B5B;
   color: white;
 }
 
@@ -64,9 +65,7 @@ a {
 }
 #nav-menu {
   display: flex;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   justify-content: space-between;
   position: fixed;
   overflow: hidden;
@@ -96,8 +95,9 @@ a {
   z-index: 2;
   width: 100vw;
   height: 60px;
-  background-color: #965d4f;
+  background-color: #3D2B1F;
   color: #ca9a82;
+  font-family: 'Gabriela', serif;
 }
 
 #menu img {
@@ -105,8 +105,18 @@ a {
   height: 30px;
 }
 
-.section {
+.section-odd {
   padding: 3% 5% 0 3%;
+  background-color: #A67B5B;
+}
+
+.section-even {
+  padding: 3% 5% 0 3%;
+  background-color: #3D2B1F;
+}
+
+.section-even > .main_title{
+  color: #A67B5B;
 }
 
 .main_title {
@@ -158,15 +168,24 @@ a {
   width: 100%;
   height: 7vw;
   background-color: #ca9a82;
-  background-image: linear-gradient(#9F8170, #ca9a82);
+  background-image: linear-gradient(#8e5229, #3D2B1F);
   z-index: 0;
 }
 
-.gap {
+.gap-odd {
   width: 100%;
   height: 7vw;
   background-color: #ffc5a7;
-  background-image: linear-gradient(#9F8170, #ca9a82);
+  background-image: linear-gradient(#8e5229, #3D2B1F);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  z-index: 0;
+}
+
+.gap-even {
+  width: 100%;
+  height: 7vw;
+  background-color: #ffc5a7;
+  background-image: linear-gradient(#8e5229, #A67B5B);
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
   z-index: 0;
 }
@@ -444,7 +463,6 @@ a {
 
 .stats {
   width: auto;
-  margin: 20px;
   align-items: center;
 }
 
@@ -453,8 +471,16 @@ a {
 }
 
 #stats-desc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   margin-top: 2%;
   width: 100%;
+}
+
+#stats-desc > img{
+  width: 40%;
+  margin: 2% 0;
 }
 
 .overlay {
@@ -465,7 +491,7 @@ a {
   top: 0;
   left: 0;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #3D2B1F;
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -518,7 +544,7 @@ a {
   flex-direction: column;
   margin: 5% auto;
   padding: 50px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: #A67B5B 0px 7px 29px 0px;
   background-color: #3D2B1F;
   border-radius: 20px;
 }
@@ -651,7 +677,44 @@ textarea {
 
 /* media queries */
 
+@media screen and (max-width: 1200px) {
+  #nav-menu > #title {
+    padding-left: 30px;
+    width: 55%;
+  }
+  .console-container {
+    height: 200px;
+  }
+
+  .project {
+    flex-wrap: wrap-reverse;
+  }
+
+  .project-text {
+    width: 100%;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+
+  .stats img {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
 @media screen and (max-width: 800px) {
+  .stats{
+    display: block;
+    margin: auto;
+  }
+
+  .stats img {
+    width: 100%;
+    max-width: none;
+  }
+
   #home{
     display: none;
   }
@@ -846,32 +909,6 @@ textarea {
     width: 70%;
   }
   
-}
-
-@media screen and (max-width: 1200px) {
-  #nav-menu > #title {
-    padding-left: 30px;
-    width: 55%;
-  }
-  .console-container {
-    height: 200px;
-  }
-
-  .project {
-    flex-wrap: wrap-reverse;
-  }
-
-  .project-text {
-    width: 100%;
-  }
-
-  .project-image {
-    width: 100%;
-  }
-
-  .stats img {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 450px) {
