@@ -24,6 +24,8 @@
 
 <body>
     <!--Navbar Section-->
+
+    <!-- nav-large -->
     <nav id="nav-menu">
 
         <div id="title">
@@ -33,8 +35,8 @@
             <div class="sub_title nav-link projects"><a href="#projects">Projects</a></div>
             <div class="sub_title nav-link contact"><a href="#contact">Contacts</a></div>
             <div class="sub_title nav-link resume">
-                <a class="resume-title"
-                    href="./resources/fw20_0093_Angel_Saikia_Resume.pdf">Resume
+                <a class="resume-title" onclick="resumeDownload()"
+                    href="./resources/fw20_0093_Angel_Saikia_Resume.pdf" download>Resume
                 </a>
             </div>
             <div class="sub_title"><a href="#education">Education</a></div>
@@ -59,6 +61,8 @@
             </div>
         </div>
     </nav>
+
+    <!-- nav-mobile -->
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -67,8 +71,8 @@
             <div class="sub_title nav-link skills"><a href="#skills" onclick="closeNav()">Skills</a></div>
             <div class="sub_title nav-link projects"><a href="#projects" onclick="closeNav()">Projects</a></div>
             <div class="sub_title nav-link contact"><a href="#contact" onclick="closeNav()">Contacts</a></div>
-            <div class="sub_title nav-link resume"><a
-                    href="./resources/fw20_0093_Angel_Saikia_Resume.pdf" onclick="closeNav()">Resume</a></div>
+            <div class="sub_title nav-link resume" onclick="resumeDownload()">
+                <a href="./resources/fw20_0093_Angel_Saikia_Resume.pdf" download>Resume</a></div>
             <div class="sub_title"><a href="#education" onclick="closeNav()">Education</a></div>
         </div>
     </div>

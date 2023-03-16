@@ -67,3 +67,7 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+function resumeDownload(){
+  window.open("https://drive.google.com/file/d/1Fj5f8gM2Qq3qfJX3y6g8k6vYU6zZw6xR/view?usp=sharing", "_blank");
+}
