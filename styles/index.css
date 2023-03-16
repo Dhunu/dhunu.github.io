@@ -33,12 +33,12 @@
 
 .reveal{
   position: relative;
-  transform: translateY(100px);
+  transform: translateY(20px);
   opacity: 0;
   transition: 2s all ease;
 }
 .reveal.active{
-  transform: translateY(0);
+  transform: translateY(0px);
   opacity: 1;
 }
 
@@ -108,11 +108,13 @@ a {
 .section-odd {
   padding: 3% 5% 0 3%;
   background-color: #A67B5B;
+  padding-top: 7vw;
 }
 
 .section-even {
   padding: 3% 5% 0 3%;
   background-color: #3D2B1F;
+  padding-top: 7vw;
 }
 
 .section-even > .main_title{
@@ -164,6 +166,7 @@ a {
 }
 
 #gap_about_me {
+  display: none;
   margin-top: 32vw;
   width: 100%;
   height: 7vw;
@@ -173,6 +176,7 @@ a {
 }
 
 .gap-odd {
+  display: none;
   width: 100%;
   height: 7vw;
   background-color: #ffc5a7;
@@ -182,6 +186,7 @@ a {
 }
 
 .gap-even {
+  display: none;
   width: 100%;
   height: 7vw;
   background-color: #ffc5a7;
@@ -267,9 +272,10 @@ a {
   left: 10px;
 }
 
-/* #about {
-  background-color: #f5e1d794;
-} */
+#about {
+  margin-top: 32vw;
+  padding-top: 10vw;
+}
 
 #about-me-description {
   padding: 2% 0;
