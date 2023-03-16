@@ -105,6 +105,23 @@ a {
   height: 30px;
 }
 
+
+#home-small{
+  padding-top: 16vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 30px;
+}
+
+#home-small img{
+  height: auto;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
 .section-odd {
   padding: 3% 5% 0 3%;
   background-color: #A67B5B;
@@ -216,9 +233,6 @@ a {
   animation-fill-mode: forwards;
 }
 
-#home-small{
-  display: none;
-}
 
 @keyframes fadeInAnimationleft {
   0% {
