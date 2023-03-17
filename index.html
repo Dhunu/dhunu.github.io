@@ -34,7 +34,7 @@
             <div class="sub_title nav-link skills"><a href="#skills">Skills</a></div>
             <div class="sub_title nav-link projects"><a href="#projects">Projects</a></div>
             <div class="sub_title nav-link contact"><a href="#contact">Contacts</a></div>
-            <div class="sub_title nav-link resume">
+            <div class="sub_title nav-link resume" id="resume-button-1">
                 <a class="resume-title" onclick="resumeDownload()"
                     href="./resources/fw20_0093_Angel_Saikia_Resume.pdf" download>Resume
                 </a>
@@ -71,7 +71,7 @@
             <div class="sub_title "><a href="#skills" onclick="closeNav()">Skills</a></div>
             <div class="sub_title "><a href="#projects" onclick="closeNav()">Projects</a></div>
             <div class="sub_title "><a href="#contact" onclick="closeNav()">Contacts</a></div>
-            <div class="sub_title " onclick="resumeDownload()">
+            <div class="sub_title " onclick="resumeDownload()"  id="resume-button-1">
                 <a href="./resources/fw20_0093_Angel_Saikia_Resume.pdf" download>Resume</a></div>
             <div class="sub_title"><a href="#education" onclick="closeNav()">Education</a></div>
         </div>
@@ -88,7 +88,7 @@
     </div> -->
 
     <div id="home" class="section-odd">
-        <img src="./resources/pic.png" alt="" />
+        <img class="home-img" src="./resources/pic.png" alt="" />
         <div id="user-detail-name">
             <h2>Hi!</h2>
             <h3>I am <span>Angel Saikia</span></h3>
@@ -171,12 +171,12 @@
                     </div>
                     <div class="project-links project-elements reveal fade-left">
                         <a href="https://peppy-valkyrie-ddd5ab.netlify.app/index.html">
-                            <div class="live-link">
+                            <div class="live-link project-deployed-link">
                                 LIVE
                             </div>
                         </a>
                         <a href="https://github.com/Roshan-Patro/fallacious-company-8720">
-                            <div class="live-link">
+                            <div class="live-link project-github-link">
                                 GITHUB
                             </div>
                         </a>
@@ -237,12 +237,12 @@
                     </div>
                     <div class="project-links project-elements reveal fade-left">
                         <a href="https://headphone-zone.netlify.app/">
-                            <div class="live-link">
+                            <div class="live-link project-deployed-link">
                                 LIVE
                             </div>
                         </a>
                         <a href="https://github.com/Dhunu/third-ice-7307">
-                            <div class="live-link">
+                            <div class="live-link project-github-link">
                                 GITHUB
                             </div>
                         </a>
@@ -264,49 +264,49 @@
     <div id="skills" class="section-even reveal">
         <div class="main_title">Languages & Frameworks</div>
         <div id="skill-container">
-            <div class="skill reveal fade-left">
-                <img src="./resources/html.svg" alt="">
-                <div>HTML</div>
+            <div class="skill reveal fade-left skills-card">
+                <img class="skills-card-img" src="./resources/html.svg" alt="">
+                <div class="skills-card-name">HTML</div>
             </div>
-            <div class="skill reveal fade-right">
-                <img src="./resources/css3.svg" alt="">
-                <div>CSS</div>
+            <div class="skill reveal fade-right skills-card">
+                <img class="skills-card-img" src="./resources/css3.svg" alt="">
+                <div class="skills-card-name">CSS</div>
             </div>
-            <div class="skill reveal fade-left">
-                <img src="./resources/js.svg" alt="">
-                <div>JS</div>
+            <div class="skill reveal fade-left skills-card">
+                <img class="skills-card-img" src="./resources/js.svg" alt="">
+                <div class="skills-card-name">JS</div>
             </div>
-            <div class="skill reveal fade-right">
-                <img src="./resources/java.svg" alt="">
-                <div>JAVA</div>
+            <div class="skill reveal fade-right skills-card">
+                <img class="skills-card-img" src="./resources/java.svg" alt="">
+                <div class="skills-card-name">JAVA</div>
             </div>
-            <div class="skill reveal fade-left">
-                <img src="./resources/mysql.svg" alt="">
-                <div>MySQL</div>
+            <div class="skill reveal fade-left skills-card">
+                <img class="skills-card-img" src="./resources/mysql.svg" alt="">
+                <div class="skills-card-name">MySQL</div>
             </div>
-            <div class="skill reveal fade-right">
-                <img src="./resources/hibernate.svg" alt="">
-                <div>HIBERNATE</div>
+            <div class="skill reveal fade-right skills-card">
+                <img class="skills-card-img" src="./resources/hibernate.svg" alt="">
+                <div class="skills-card-name">HIBERNATE</div>
             </div>
-            <div class="skill reveal fade-left">
-                <img src="./resources/maven.svg" alt="">
-                <div>MAVEN</div>
+            <div class="skill reveal fade-left skills-card">
+                <img class="skills-card-img" src="./resources/maven.svg" alt="">
+                <div class="skills-card-name">MAVEN</div>
             </div>
-            <div class="skill reveal fade-right">
-                <img src="./resources/python.svg" alt="">
-                <div>PYTHON</div>
+            <div class="skill reveal fade-right skills-card">
+                <img class="skills-card-img" src="./resources/python.svg" alt="">
+                <div class="skills-card-name">PYTHON</div>
             </div>
-            <div class="skill reveal fade-left">
-                <img src="./resources/c.svg" alt="">
-                <div>C</div>
+            <div class="skill reveal fade-left skills-card">
+                <img class="skills-card-img" src="./resources/c.svg" alt="">
+                <div class="skills-card-name">C</div>
             </div>
-            <div class="skill reveal fade-right">
-                <img src="./resources/kotlin.svg" alt="">
-                <div>Kotlin</div>
+            <div class="skill reveal fade-right skills-card">
+                <img class="skills-card-img" src="./resources/kotlin.svg" alt="">
+                <div class="skills-card-name">Kotlin</div>
             </div>
-            <div class="skill reveal fade-left">
-                <img src="./resources/dart.svg" alt="">
-                <div>Dart</div>
+            <div class="skill reveal fade-left skills-card">
+                <img class="skills-card-img" src="./resources/dart.svg" alt="">
+                <div class="skills-card-name">Dart</div>
             </div>
         </div>
     </div>
