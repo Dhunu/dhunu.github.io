@@ -106,7 +106,7 @@ a {
 }
 
 
-#home{
+#main-home{
   padding-top: 16vw;
   display: flex;
   flex-wrap: wrap;
@@ -116,12 +116,12 @@ a {
   font-size: 30px;
 }
 
-#home span{
+#main-home span{
   color: #3D2B1F;
   font-weight:900;
 }
 
-#home img{
+#main-home img{
   height: auto;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -218,13 +218,13 @@ a {
   z-index: 0;
 }
 
-/* #home {
+/* #main-home {
   height: 50vh;
   padding: 5vw 10px;
   z-index: 0;
 }
 
-#home img {
+#main-home img {
   background-color: #3D2B1F;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   width: 20vw;
@@ -755,7 +755,7 @@ textarea {
     text-align: center;
   }
 
-  #home img{
+  #main-home img{
     width: 50%;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
