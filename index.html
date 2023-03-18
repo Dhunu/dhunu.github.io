@@ -71,7 +71,7 @@
             <div class="sub_title "><a href="#skills" onclick="closeNav()">Skills</a></div>
             <div class="sub_title "><a href="#projects" onclick="closeNav()">Projects</a></div>
             <div class="sub_title "><a href="#contact" onclick="closeNav()">Contacts</a></div>
-            <div class="sub_title " onclick="resumeDownload()"  id="resume-button-1">
+            <div class="sub_title " onclick="resumeDownload()">
                 <a href="./resources/fw20_0093_Angel_Saikia_Resume.pdf" download>Resume</a></div>
             <div class="sub_title"><a href="#education" onclick="closeNav()">Education</a></div>
         </div>
@@ -108,7 +108,8 @@
             Looking forward to working on some challenging projects. <br><br>
             I am very adapt to any working condition, remote or on-site.
             <br />
-            <a href="./resources/Angel_Saikia_Resume.pdf" download>
+            <a id="resume-link-2" onclick="resumeDownload()"
+            href="./resources/fw20_0093_Angel_Saikia_Resume.pdf" download>
             <button id="resume_download">
                 Resume <i class="fa fa-download"></i>
             </button>
@@ -359,7 +360,7 @@
     <!--Github Calender-->
     <div id="github" class="section-odd reveal">
         <div class="main_title">Github Calender</div>
-        <div class="calendar" id="cal">
+        <div class="calendar react-activity-calendar" id="cal">
             <!-- Loading stuff -->
             Loading the data just for you.
         </div>

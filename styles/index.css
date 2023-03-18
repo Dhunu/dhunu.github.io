@@ -310,17 +310,18 @@ a {
   margin-top: 50px;
   background-color: transparent;
   border-radius: 10px;
-  border: #3D2B1F solid 1px;
+  border: #8e5229 solid 1px;
   font-weight: 600;
   font-size: 20px;
   transition: ease-out 0.5s;
-  color: #3D2B1F;
+  color: #ca9a82;
 }
 
 #resume_download:hover {
-  background-color: #3D2B1F;
+  border: #ca9a82;
+  background-color: #A67B5B;
   transition: ease-in 0.5s;
-  color: #ddb19c;
+  color: #3D2B1F;
   cursor: pointer;
 }
 .project-card {
