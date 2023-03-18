@@ -309,7 +309,8 @@ a {
   font-size: 25px;
 }
 
-.resume_download {
+#resume {
+  width: 10vw;
   min-width: 150px;
   height: 3vw;
   min-height: 50px;
@@ -327,15 +328,15 @@ a {
   align-items: center;
 }
 
-.resume_download:hover {
+#resume:hover {
   border: #ca9a82;
   background-color: #A67B5B;
   transition: ease-in 0.5s;
   cursor: pointer;
 }
 
-.resume_download a{
-  font-size: 30px;
+#resume a{
+  font-size: 2vw;
 }
 
 
@@ -883,7 +884,7 @@ textarea {
     font-size: 10px;
   }
 
-  .resume_download {
+  #resume {
     font-size: 15px;
     width: 7vw;
     min-width: 100px;
