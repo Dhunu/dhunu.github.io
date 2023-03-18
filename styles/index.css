@@ -315,7 +315,6 @@ a {
   height: 3vw;
   min-height: 50px;
   margin-top: 50px;
-  margin-bottom: 50px;
   background-color: transparent;
   border-radius: 10px;
   border: #8e5229 solid 1px;
@@ -323,6 +322,9 @@ a {
   font-size: 20px;
   transition: ease-out 0.5s;
   color: #ca9a82;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .resume_download:hover {
@@ -331,6 +333,11 @@ a {
   transition: ease-in 0.5s;
   cursor: pointer;
 }
+
+.resume_download a{
+  font-size: 30px;
+}
+
 
 .project-card {
   display: flex;
