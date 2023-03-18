@@ -315,6 +315,7 @@ a {
   height: 3vw;
   min-height: 50px;
   margin-top: 50px;
+  margin-bottom: 50px;
   background-color: transparent;
   border-radius: 10px;
   border: #8e5229 solid 1px;
