@@ -425,7 +425,7 @@ a {
   transition: 0.2s ease-in;
 }
 
-#education {
+/* #education {
   padding-top: 10%;
 }
 
@@ -435,9 +435,9 @@ a {
 
 .education-institutes {
   margin: 2% 0;
-}
+} */
 
-.degree {
+/* .degree {
   font-size: 25px;
   font-style: italic;
   margin: 1% 0;
@@ -452,7 +452,7 @@ a {
 .date {
   font-size: 15px;
   margin: 1% 0;
-}
+} */
 
 #skills {
   padding-top: 10%;
@@ -806,7 +806,7 @@ textarea {
     font-size: 10px;
   }
 
-  .degree{
+  /* .degree{
     font-size: 15px;
     color: #3D2B1F;
   }
@@ -817,7 +817,7 @@ textarea {
 
   .date{
     font-size: 10px;
-  }
+  } */
 
   #skill-container img {
     height: 32px;
