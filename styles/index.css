@@ -105,6 +105,13 @@ a {
   height: 30px;
 }
 
+#menu span{
+  color: #ca9a82;
+}
+
+#menu a{
+  color: #ca9a82;
+}
 
 #home{
   padding-top: 16vw;
@@ -302,12 +309,12 @@ a {
   font-size: 25px;
 }
 
-#resume_download {
+.resume_download {
   width: 10vw;
   min-width: 150px;
   height: 3vw;
   min-height: 50px;
-  margin-top: 50px;
+  margin-bottom: 50px;
   background-color: transparent;
   border-radius: 10px;
   border: #8e5229 solid 1px;
@@ -317,13 +324,13 @@ a {
   color: #ca9a82;
 }
 
-#resume_download:hover {
+.resume_download:hover {
   border: #ca9a82;
   background-color: #A67B5B;
   transition: ease-in 0.5s;
-  color: #3D2B1F;
   cursor: pointer;
 }
+
 .project-card {
   display: flex;
   flex-wrap: wrap;
@@ -864,7 +871,7 @@ textarea {
     font-size: 10px;
   }
 
-  #resume_download {
+  .resume_download {
     font-size: 15px;
     width: 7vw;
     min-width: 100px;
