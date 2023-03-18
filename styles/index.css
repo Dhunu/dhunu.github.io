@@ -318,7 +318,7 @@ a {
   margin-bottom: 50px;
   background-color: transparent;
   border-radius: 10px;
-  border: #8e5229 solid 1px;
+  border: #3D2B1F solid 1px;
   font-weight: 600;
   font-size: 20px;
   transition: ease-out 0.5s;
@@ -329,14 +329,13 @@ a {
 }
 
 #resume:hover {
-  border: #ca9a82;
-  background-color: #A67B5B;
+  background-color: #3D2B1F;
   transition: ease-in 0.5s;
   cursor: pointer;
 }
 
 #resume a{
-  font-size: 2vw;
+  font-size: 1.8vw;
 }
 
 
