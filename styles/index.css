@@ -309,7 +309,7 @@ a {
   font-size: 25px;
 }
 
-#resume {
+#resume-button-2 {
   width: 10vw;
   min-width: 150px;
   height: 3vw;
@@ -328,13 +328,13 @@ a {
   align-items: center;
 }
 
-#resume:hover {
+#resume-button-2:hover {
   background-color: #3D2B1F;
   transition: ease-in 0.5s;
   cursor: pointer;
 }
 
-#resume a{
+#resume-button-2 a{
   font-size: 1.8vw;
 }
 
@@ -883,7 +883,7 @@ textarea {
     font-size: 10px;
   }
 
-  #resume {
+  #resume-button-2 {
     font-size: 15px;
     width: 7vw;
     min-width: 100px;
