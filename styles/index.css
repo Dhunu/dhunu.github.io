@@ -135,6 +135,21 @@ a {
   background-color: #3D2B1F;
 }
 
+.btn{
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--main-color);
+  border-radius: 5px;
+  color: var(--text-color);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: all .45s ease;
+}
+.btn:hover{
+  transform: scale(0.9);
+}
+
 .section-odd {
   padding: 3% 5% 0 3%;
   background-color: #A67B5B;
