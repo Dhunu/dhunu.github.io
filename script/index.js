@@ -69,5 +69,5 @@
 // window.addEventListener("scroll", reveal);
 
 function resumeDownload(){
-  window.open("https://drive.google.com/file/d/1Kbl2jUxslOCnmP6GQESF0YOR47FlVROp/view?usp=sharing", "_blank");
+  window.open("https://drive.google.com/file/d/1Kbl2jUxslOCnmP6GQESF0YOR47FlVROp/view?usp=sharing");
 }
