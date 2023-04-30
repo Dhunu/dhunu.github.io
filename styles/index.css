@@ -170,7 +170,7 @@ a {
 }
 
 .main_title {
-  font-size: 50px;
+  font-size: 40px;
   color: #3D2B1F;
   font-family: "Luckiest Guy", cursive;
   text-align: center;
@@ -547,6 +547,11 @@ a {
   margin: 2% 0;
 }
 
+#calendar {
+  width: 100%;
+  background-color: white;
+}
+
 .overlay {
   height: 100%;
   width: 0;
@@ -603,7 +608,7 @@ a {
 
 #contact-form {
   width: 40vw;
-  min-width: 300px;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   margin: 5% auto;
